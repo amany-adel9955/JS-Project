@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="js style.css">
+    <link rel="stylesheet" href="../for projects/css/bootstrap.css">
+    <title>E Commerce</title>
+</head>
+<body class="bg-light-black">
+    <main class="text-white py-5" >
+    <div class="project">
+    <div class="header">
+        <h2>E-commerce Application</h2> </div>
+    <div class="login">
+        <div class="mb-3">       
+            <input  type="text" id="email" placeholder="email" class="form-control">  
+        </div>
+        <div class="mb-3">       
+            <input type="number" id="password" placeholder="password" class="form-control">  
+        </div>
+        
+        <div class="mb-3">       
+            <button onclick='loginSystem()' id="login-button" class = "btn btn-outline-success ">Login</button>
+        </div>
+         
+      
+    </div>
+    <div class="container">
+        <div class="mb-3">       
+            <input type="text" id = "customer" placeholder="seller" required class="form-control">    
+        </div>
+        <div class="mb-3">       
+            <input type="text" id = "productname" placeholder="product name" required class="form-control" >  
+        </div>
+        <div class="mb-3">       
+            <input type="number" id = "productid" placeholder="product id" required class="form-control">
+        </div>
+        <div class="mb-3">       
+            <input type="text" id = "category" placeholder="product category" required class="form-control">
+        </div>
+        <div class="mb-3">       
+            <input  type="number" id = "productprice" placeholder="product price" class="form-control">
+        </div>
+        <div class="mb-3">       
+            <input onkeyup='searchProduct(this.value)' type="text" placeholder="search" id="search" class="form-control">
+        </div>
+        <div class="mb-3">       
+            <button onclick='addProduct()' id="submit" class = "btn btn-outline-success ">Add Product</button>
+        </div>
+         
+    </div>
+
+    <div class="table-container">
+      <table>
+       <thead>
+        <th>ID</th>
+        <th>Seller</th>
+        <th>Product Name</th>
+        <th>Product Id</th>
+        <th>Product Category</th>
+        <th>Product Price</th>
+        <th>Update</th>
+        <th>Delete</th>
+        </thead>
+       <tbody id="tbody">
+       </tbody>
+        </table>
+     </div>
+    </div>
+</main>
+
+    <script src="../for projects/js/popper.min.js"></script>
+    <script src="../for projects/js/jquery-3.7.1.min.js"></script>
+    <script src="../for projects/js/bootstrap.js"></script>
+    <script src="js project.js"></script>
+</body>
+</html>

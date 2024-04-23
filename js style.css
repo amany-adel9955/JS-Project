@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.project{
+
+    width: 80%;
+    margin: auto;
+}
+.header{
+text-align: center;
+margin: 10px 0;
+}
+.login{
+    width: 50%;
+    margin: auto;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(149, 243, 201);
+    margin: 6px 0;
+    
+}
+input:focus{
+    background-color:rgb(233, 246, 240); ;
+}
+table {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+    border: rgb(156, 222, 156) 1px solid;
+    
+}
+th,td{
+  padding: 5px;  
+ 
+}
+.bg-light-black{
+background-color: #202020;
+}
